@@ -5,9 +5,8 @@
 #include <stdio.h>
 
 /**
-* main - Prints the last digit of a randomly generated number
-* and whether it is greater than 5, less than 6, or 0 
-*Return: Always (Success)
+* main - Prints a text accordig number
+* Return: Always (Success)
 *
 */
 
@@ -18,7 +17,7 @@ int main(void)
 int n, lastd;
 
 srand(time(0));
-n = rand() - RAND_MAX /2;
+n = rand() - RAND_MAX / 2;
 lastd = n % 10;
 
 if (lastd > 5)
