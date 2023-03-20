@@ -3,10 +3,10 @@
 #include <time.h>
 
 /**
-* main - Prints alphabets
+* main - Entry point
 * Result: Always 0 (Success)
 *
-*/ 
+*/
 int main(void)
 
 {
