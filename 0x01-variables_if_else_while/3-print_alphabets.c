@@ -1,31 +1,25 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
 * main - Prints alphabets
-* Result: Always Success
+* Result: Always 0 (Success)
 *
 */ 
 int main(void)
 
 {
 
-char c;
+char low;
 
-Print lowercase alphabet
-for (c = 'a'; c <= 'z'; ++c)
-{
-putchar(c);
-}
+for (low = 'a'; low <= 'z'; low++)
+putchar(low);
 
-Print uppercase alphabet
-for (c = 'A'; c <= 'Z'; ++c)
-{
-putchar(c);
-}
-
-Print new line
+for (low = 'A'; low <= 'Z'; low++)
+putchar(low);
 putchar('\n');
 
-return 0;
+return (0);
 
 }
