@@ -1,18 +1,27 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
 * main - Prints the alphabets.
 * Return: Always 0 (Success)
 */
-int main(void)
-{
-char alp[26] = "abcdefghijklmnopqrstuvwxyz";
-int i;
 
-for (i = 0; i < 26; i++);
+int main(void)
+
 {
-putchar(alp[i]);
+
+char low, e, q;
+
+e = 'e';
+q = 'q';
+
+for (low = 'a'; low <= 'z'; low++)
+{
+if (low != e && low != q)
+putchar(low);
 }
 putchar('\n');
 return (0);
+
 }
