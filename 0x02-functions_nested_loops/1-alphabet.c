@@ -5,11 +5,11 @@
 * Return: Void
 */
 
-void print_alphabet(void);
+void print_alphabet(void)
 
 {
 
-char c;
+char c, _putchar;
 
 for (c = 'a'; c <= 'z'; c++)
 {
