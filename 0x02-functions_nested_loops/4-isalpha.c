@@ -1,14 +1,16 @@
 #include "main.h"
 
 /**
-* main - check the code
-* Return: Always 0.
+* MAIN -  Determines if a given character is an alphabetic character.
+* Return: 1 if the character is an alphabetic character, 0 otherwise.
 */
 
-int _isalpha(int c)
+int _isalpha(char c)
+
 {
-if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+if (c >= 'A' && c <= 'Z' | | c >= 'a' && c <= 'z')
+{
 return 1;
-else
+}
 return 0;
 }
