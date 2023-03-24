@@ -10,7 +10,7 @@ void print_diagonal(int n)
 
 {
 
-int x, y;
+int x = 0, y;
 
 if (x <= 0)
 {
@@ -29,4 +29,3 @@ _putchar('\n');
 }
 }
 }
-~
