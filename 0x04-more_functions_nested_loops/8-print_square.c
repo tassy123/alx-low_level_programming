@@ -6,9 +6,8 @@
 * Return: empty
 */
 
-void print_square(int size) 
+void print_square(int size)
 {
-	
 int x, y;
 
 if (size <= 0)
@@ -26,5 +25,4 @@ _putchar(35);
 _putchar('\n');
 }
 }
-}	
-
+}
