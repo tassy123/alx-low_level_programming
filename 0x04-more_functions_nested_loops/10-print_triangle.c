@@ -25,7 +25,6 @@ for (z = 0; z <= x; z++)
 {
 _putchar(35);
 }
-putchar('\n');
 }
 }
 }
