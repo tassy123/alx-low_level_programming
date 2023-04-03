@@ -2,19 +2,16 @@
 
 /**
 * _memset - memory with a constant byte
-* @s: starting address of memory to be filled
-* @b: desired value
+* @s: pointed destination
+* @b: constant byte
 * @n: number of bytes to be changed
-* Return: changed array with new value for n bytes
+* Return: Always 0 (success)
 */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-int i = 0;
-for (; i > 0; i++)
-{
+unsigned int i;
+for (i = 0; i < n; i++)
 s[i] = b;
-n--;
-}
 return (s);
 }
