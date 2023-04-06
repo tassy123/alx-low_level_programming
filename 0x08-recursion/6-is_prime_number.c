@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+
 int actual_prime(int n, int s);
 
 /**
