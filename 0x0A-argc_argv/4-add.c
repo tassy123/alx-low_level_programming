@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-* isNumeric: Print the result, followed by a new line
+* isNumeric - Print the result, followed by a new line
 * @n: number to be printed
 * Return: true if number, if not, false
 */
