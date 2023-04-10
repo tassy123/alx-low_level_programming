@@ -2,42 +2,35 @@
 #include <stdlib.h>
 
 /**
-* isNumeric - Print the result, followed by a new line
-* @n: number to be printed
-* Return: true if number, if not, false
-*/
-
-int isNumeric(const char *n)
-{
-while (*n != '\0')
-{
-if (*n < '0' || *n > 9)
-return (0);
-n++;
-}
-return (1);
-}
-
-/**
-* main - add positive numbers
-* @argc: array size
-* @argv: array containing elements
-* Return: Always 0 (success)
+* main - Print the result, followed by a new line
+* @argc: number to be printed
+* @argv: argument
+* Return: always 0 (success)
 */
 
 int main(int argc, char **argv)
 {
-int lop = 1, sum = 0;
-while (lop < argc)
+int a, b;
+int add = 0;
+int dig;
+if (argc < 2)
 {
-if (isNumeric(argv[lop]) == 0)
-{
-puts("Error");
+printf("0\n");
 return (1);
 }
-sum = sum + atoi(argv[lop]);
-lop++;
+for (a = 1; a < argc; a++)
+{
+for (b = 0; argv[a][b] != '\0'; b++)
+{
+if (argv[a][b] < '0' || argv[a][b] > '9')
+{
+printf("Error\n");
+return (1);
 }
-printf("%d\n", sum);
+}
+dig = atoi(argv[a]);
+add = add + dig;
+}
+printf("%d\n", add);
 return (0);
 }
