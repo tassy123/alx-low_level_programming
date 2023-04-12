@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib>
+#include <stdlib.h>
 
 /**
 * create_array - creates an array of chars
@@ -11,12 +11,12 @@
 
 char *create_array(unsigned int size, char c)
 {
-char *std;
+char *str;
 unsigned int g;
-std = malloc(sizeof(char) * size);
-if (size == 0 || std == NULl)
+str = malloc(sizeof(char) * size);
+if (size == 0 || str == NULL)
 return (NULL);
 for (g = 0; g < size; g++)
-std[g] = c;
-return (std);
+str[g] = c;
+return (str);
 }
