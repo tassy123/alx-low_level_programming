@@ -1,15 +1,16 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
 * alloc_grid - returns a pointer to a 2 dimensional array of integers.
 * @width: first dimension
 * @height: second dimension
-* Return: empty
+* Return: pointer to array
 */
 
 int **alloc_grid(int width, int height)
 {
-int tex;
+int **tex;
 int o, p;
 if (height <= 0 || width <= 0)
 return (NULL);
