@@ -1,12 +1,11 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
 * str_concat - function that concatenates two strings.
 * @s1: first string
 * @s2: second string
-* Return: NULL on failure
+* Return: concat of s1 and s2
 */
 
 char *str_concat(char *s1, char *s2)
