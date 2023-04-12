@@ -3,33 +3,33 @@
 
 /**
 * str_concat - function that concatenates two strings.
-* @s1: first string
-* @s2: second string
+* @s1: first input
+* @s2: second input
 * Return: concat of s1 and s2
 */
 
 char *str_concat(char *s1, char *s2)
 {
-char *concat;
-int f, s;
+char *conct;
+int f, se;
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-f = s = 0;
+f = se = 0;
 while (s1[f] != '\0')
 f++;
-while (s2[s] != '\0')
-s++;
-concat = malloc(sizeof(char) * (f + s + 1));
-if (concat == NULL)
+while (s2[se] != '\0')
+se++;
+conct = malloc(sizeof(char) * (f + se + 1));
+if (conct == NULL)
 return (NULL);
-f = s = 0;
+f = se = 0;
 while (s1[f] != '\0')
 {
-concat[f] = s2[s];
-f++, s++;
+conct[f] = s2[se];
+f++, se++;
 }
-concat[f] = '\0';
-return (concat);
+conct[f] = '\0';
+return (conct);
 }
