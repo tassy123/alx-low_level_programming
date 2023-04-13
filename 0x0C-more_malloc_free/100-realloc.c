@@ -6,46 +6,39 @@
 /**
 * print _realloc - reallocates a memory block using malloc and free
 * @ptr: memory to reallocate
-* @size: location size
+* @old_size: old location size 
+* @new_size:new  location size
 * Return: always 0 (success)
 */
 
-void print_realloc(char *realloc, unsigned int size)
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
+char *ptr1;
+char *old_ptr;
 unsigned int y;
-y = 0;
-while (y < size)
+if (new_size == old_size)
+return (ptr);
+if (new_size == 0 && ptr)
 {
-if (y % 10)
+free(ptr);
+return (NULL);
+}
+if (!ptr)
+return (malloc(new_size));
+ptr1 = malloc(new_size);
+if (!ptr1)
+return (NULL);
+old_ptr = ptr;
+if (new_size < old_size)
 {
-printf(" ");
+for (y = 0; y < new_size; y++)
+ptr1[y] = old_ptr[y];
 }
-if (!(y % 10) && y)
+if (new_size > old_size)
 {
-printf("\n");
+for (y = 0; y < old_size; y++)
+ptr1[y] = old_ptr[y];
 }
-printf("0x%02x", realloc[y]);
-y++;
-}
-printf("\n");
-}
-/**
-* main - check the code
-* Return: always 0 (success)
-*/
-
-int main(void)
-{
-char *j;
-int s;
-j = malloc(sizeof(char) * 10);
-j = _realloc(j, sizeof(char) * 10, sizeof(char) * 98);
-s = 0;
-while (s < 98)
-{
-j[s++] = 98;
-}
-print_realloc(j, 98);
-free(j);
-return(0);
+free(ptr);
+return (ptr1);
 }
