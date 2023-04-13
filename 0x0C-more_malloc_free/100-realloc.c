@@ -4,9 +4,9 @@
 #include <string.h>
 
 /**
-* print _realloc - reallocates a memory block using malloc and free
+* _realloc - reallocates a memory block using malloc and free
 * @ptr: memory to reallocate
-* @old_size: old location size 
+* @old_size: old location size
 * @new_size:new  location size
 * Return: always 0 (success)
 */
