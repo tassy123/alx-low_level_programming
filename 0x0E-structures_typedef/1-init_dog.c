@@ -4,19 +4,19 @@
 
 /**
 * init_dog - variables of dog structure
-* @g: dog to initialise
+* @d: dog to initialise
 * @name: name of dog
 * @age: age of dog
 * @owner: owner of dog
 * Return: empty
 */
 
-void init_dog(struct dog *g, char *name, float age, char *owner)
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-if (g != NULL)
+if (d != NULL)
 {
-g->name = name;
-g->age = age;
-g->owner = owner;
+d->name = name;
+d->age = age;
+d->owner = owner;
 }
 }
