@@ -4,9 +4,9 @@
 int _strlen(char *d);
 char *_strcpy(char *dest, char *src);
 /**
-* new_dog: copy to store
+* new_dog - copy to store
 * @name: name of dog
-* age: age of dog
+* @age: age of dog
 * @owner: owner of dog
 * Return: empty
 */
@@ -41,7 +41,7 @@ cyp_dog->age = age;
 return (cyp_dog);
 }
 /**
-* _strlen: length of string
+* _strlen - length of string
 * @s: string to return
 * Return: string length
 */

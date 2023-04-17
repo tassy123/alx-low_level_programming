@@ -3,7 +3,7 @@
 
 /**
 * struct dog - variables of dogs
-* @dog: dog to initialise
+* @d: dog to initialise
 * @name: name to initialise
 * @age: age to initialise
 * @owner: owner to initialise

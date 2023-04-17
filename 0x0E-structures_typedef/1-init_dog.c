@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
-* init_dog: variables of dog structure
+* init_dog - variables of dog structure
 * @g: dog to initialise
 * @name: name of dog
 * @age: age of dog
