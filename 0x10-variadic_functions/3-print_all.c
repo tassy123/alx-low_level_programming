@@ -38,7 +38,7 @@ default:
 o++;
 continue;
 }
-sep = ",";
+sep = ", ";
 o++;
 }
 }
