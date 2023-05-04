@@ -10,15 +10,15 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-unsigned int k = 0;
-int j = 0;
+unsigned int s = 0;
+int p = 0;
 if (b == NULL)
 return (0);
-while (b[j] == '0' || b[j] == '1')
-{ /*Found another digit.*/
-k <<= 1;
-k += b[j] - '0';
-j++;
+while (b[p] == '0' || b[p] == '1')
+{  /* Found another digit. */
+s <<= 1;
+s += b[p] - '0';
+p++;
 }
-return (k);
+return (s);
 }
