@@ -15,8 +15,7 @@ int j = 0;
 if (b == NULL)
 return (0);
 while (b[j] == '0' || b[j] == '1')
-/*Found another digit.*/
-{
+{ /*Found another digit.*/
 k <<= 1;
 k += b[j] - '0';
 j++;
